@@ -1,10 +1,11 @@
 $files_to_check_matera = @(
-    "mat_Cadoc.csv",
-    "mat_CC.csv",
-    "mat_CC_acumulativo.csv",
-    "mat_CC_ANUAL.csv",
-    "mat_CC_atual.csv",
-    "mat_Vers_Matera.csv"
+    "cart_baseiof.csv",
+    "cart_plan_camp.csv",
+    "cart_rot_combinado.csv",
+    "cart_saldodevmin.csv",
+    "CartoesPAGTOMIN.csv",
+    "CartoesREGRACAMPANHA.csv",
+    "Cartoestxcamp.csv"
 )
 
 foreach ($file in $files_to_check_matera) {

@@ -34,7 +34,7 @@ def is_today(date_time):
     return date_time == today
 
 def is_on_time(file_time):
-    max_time = time(17,30,0)
+    max_time = time(12,30,0)
     return file_time < max_time
 
 def get_file_date(file_path) -> datetime:
@@ -76,12 +76,15 @@ try:
         contain = contains(file_name,files_to_check_cartoes)
         today = is_today(file_date)
         on_time = is_on_time(file_time)
+        print(contain, today, on_time)
         if contain and today and on_time:
             count_ok = count_ok + 1
         index = index + 1
     size = lengthEqual(files_to_check_cartoes,count_ok)
+    print('count',count_ok)
+    print('size',len(files_to_check_cartoes) )
     if size:
-        print (0)
+        print (1)
     else:
        print (0) 
 except Exception as e: 
